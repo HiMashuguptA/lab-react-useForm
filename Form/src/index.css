@@ -1,0 +1,79 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: black;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(194, 83, 83, 0.407);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+legend{
+  background-color: black;
+  color: wheat;
+  padding: 3px 6px;
+}
+form input{
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  background-color: rgba(109, 138, 128, 0.318);
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  color: black;
+}
+form input[type="submit"]{
+  color: white;
+  background-color: rgb(83, 209, 83);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color:rgb(29, 224, 29) ;
+}
+form label{
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.err{
+  color: red;
+  font-size: 0.9rem;
+}
+.success{
+  background-color: rgba(38, 38, 174, 0.773);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  font-size: large;
+  text-align: center;
+  
+}
+.reset{
+  height: 37px;
+  border-radius: 3px;
+  box-shadow: #242424;
+  font-size: 16px;
+  background-color: rgba(205, 28, 28, 0.797);
+}
